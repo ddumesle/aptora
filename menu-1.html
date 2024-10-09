@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <style>
+        a:hover {
+            color:#116428;
+        }
+        .border-aptora-green {
+            border-color: #116428;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <nav class="bg-white shadow">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 justify-between">
+            <div class="flex">
+              <div class="-ml-2 mr-2 flex items-center md:hidden">
+                <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-8 w-auto" src="https://www.aptora.com/wp-content/uploads/2023/05/AptoraLogo-300x74-1.png" alt="Your Company">
+              </div>
+              <div class="hidden md:ml-12 md:flex md:space-x-8">
+                <div class="inline-flex border-b-2 border-transparent pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 nav-link">
+                    <button data-dropdown-toggle="products-menu" class="inline-flex items-center gap-x-1">
+                        <span>Products</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>    
+                    </button>
+                    <div id="products-menu" class="absolute z-10 grid hidden w-auto grid-cols-1 text-sm bg-white border border-gray-100 rounded-lg shadow">
+                        <div class="p-4 pb-0 text-gray-900 md:pb-4">
+                            <ul class="space-y-4 font-normal">
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Aptora 360
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Flat Rate Plus Online
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Flat Rate Simple
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-flex border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 nav-link">
+                    <button data-dropdown-toggle="solutions-menu" class="inline-flex items-center gap-x-1">
+                        <span>Solutions</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="solutions-menu" class="absolute z-10 grid hidden w-auto grid-cols-4 text-sm bg-white border border-gray-100 rounded-lg shadow">
+                        <div class="p-4 pb-0 text-gray-900 font-normal md:pb-4">
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="font-semibold">By software</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        ERP Software
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        CRM Software
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        FSM Software
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Flat Rate Software
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 pb-0 text-gray-900 font-normal md:pb-4">
+                            <ul class="space-y-4 ">
+                                <li>
+                                    <span class="font-semibold">By industry</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        HVAC
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Plumbing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Electrician
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Construction
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Locksmith
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Roofing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Landscape
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 text-gray-900 font-normal">
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="font-semibold">By business need</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Accounting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Payroll
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Service Scheduling
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Work Order Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Sales Automation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Lead Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Reporting & Analytics
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 pb-0 text-gray-900 font-normal md:pb-4">
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="font-semibold">By services</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Software Implementation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Database Migration
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Software Training
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Professional Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Business Coaching
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-flex border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 nav-link">
+                    <button data-dropdown-toggle="resources-menu" class="inline-flex items-center gap-x-1">
+                        <span>Resources</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="resources-menu" class="absolute z-10 grid hidden w-auto grid-cols-1 text-sm bg-white border border-gray-100 rounded-lg shadow">
+                        <div class="p-4 pb-0 text-gray-900 font-normal md:pb-4">
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Guides
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Webinars
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Podcasts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Help Center
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-flex border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 nav-link">
+                    <button data-dropdown-toggle="company-menu" class="inline-flex items-center gap-x-1">
+                        <span>Company</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="company-menu" class="absolute z-10 grid hidden w-auto grid-cols-1 text-sm bg-white border border-gray-100 rounded-lg shadow">
+                        <div class="p-4 pb-0 text-gray-900 font-normal md:pb-4">
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500">
+                                        Partners
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <span class="text-sm font-semibold text-gray-500">(913) 492-9930</span>
+                </div>
+                <div class="flex-shrink-0 md:ml-8">
+                    <button type="button" class="relative inline-flex items-center gap-x-1.5 rounded-md px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2" style="background-color: #116428;">
+                        Request a Demo
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-center" style="height: calc(100vh - 152px);">
+        <section class="my-4">
+            <h2 class="text-9xl text-center text-gray-200 font-semibold">MENU 1</h2>
+        </section>
+    </main>
+
+
+    <footer class="bg-gray-800 p-4 text-white text-center mt-8">
+        <p>&copy; 2024 Aptora Corporation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Function to handle the active state
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.stopPropagation();
+
+                navLinks.forEach(nav => nav.classList.remove('border-aptora-green', 'text-gray-900'));
+                navLinks.forEach(nav => nav.classList.add('border-transparent', 'text-gray-500', 'hover:border-gray-300'));
+
+                this.classList.add('border-aptora-green', 'text-gray-900');
+                this.classList.remove('border-transparent', 'text-gray-500', 'hover:border-gray-300');
+            });
+        });
+
+        // Add a global click event listener
+        document.addEventListener('click', function(event) {
+            if (![...navLinks].some(link => link.contains(event.target))) {
+                navLinks.forEach(nav => nav.classList.remove('border-aptora-green', 'text-gray-900'));
+                navLinks.forEach(nav => nav.classList.add('border-transparent', 'text-gray-500', 'hover:border-gray-300'));
+            }
+        });
+    </script>
+
+</body>
+</html>
